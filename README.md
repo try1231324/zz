@@ -37,3 +37,4 @@ python3 main_binary.py -a mobilenet --mobilenet_width 0.25 --mobilenet_input 160
 - 支持标准卷积和深度可分离卷积
 - 处理填充、步长和其他卷积参数
 - 与`merged_layers.h`中的量化参数集成
+- merged_layers.h和generated_layers.c是生成的两个示例文件
