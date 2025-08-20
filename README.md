@@ -41,5 +41,7 @@ python3 main_binary.py -a mobilenet --mobilenet_width 0.25 --mobilenet_input 160
 - 与`merged_layers.h`中的量化参数集成
 - merged_layers.h和generated_layers.c是生成的两个示例文件
 - - result文件夹下是用此命令训练的模型：
+```
 python3 main_binary.py -a mobilenet --mobilenet_width 0.75 --mobilenet_input 160 --save Imagenet/mobilenet_cifar100_4bit_icn160PLPACTwidth0.5 --data cifar100 --type_quant "PerLayerAsymPACT"   --weight_bits 4 --activ_bits 4 --activ_type learned --gpus 0 -j 8 --epochs 300 -b 64 --save_check --quantizer --batch_fold_delay 50 --batch_fold_type ICN
+```
 其中full_int_model_with_quant_params.pth是转化后的整数网络
