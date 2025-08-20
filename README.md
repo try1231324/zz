@@ -16,8 +16,9 @@
 
 
 **训练命令示例：**
+```
 python3 main_binary.py -a mobilenet --mobilenet_width 0.25 --mobilenet_input 160 --save Imagenet/mobilenet_cifar100_4bit_icn160PLPACTwidth0.5 --data cifar100 --type_quant "PerLayerAsymPACT"   --weight_bits 4 --activ_bits 4 --activ_type learned --gpus 0 -j 8 --epochs 300 -b 64 --save_check --quantizer --batch_fold_delay 50 --batch_fold_type ICN
-
+```
 ### weight.py
 此脚本处理将量化模型参数导出到微控制器部署用的C头文件。
 
